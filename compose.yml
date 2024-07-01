@@ -1,4 +1,10 @@
 services:
-  test.db:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    container_name: test.db
+  applicant-tracker.db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    volumes:
+      - ./.containers/sqlserver:/var/opt/mssql/data
+    ports:
+      - "5433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=ApplTrack#2024

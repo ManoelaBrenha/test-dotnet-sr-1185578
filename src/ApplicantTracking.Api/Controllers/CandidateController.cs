@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace ApplicantTracking.Api.Controllers
 {
+    [Route("api/v1/[controller]")]
     [ApiController]
     public sealed class CandidateController : ControllerBase
     {

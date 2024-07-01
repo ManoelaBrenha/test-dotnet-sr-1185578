@@ -4,4 +4,14 @@
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Commands\Requests\Timelines\" />
+    <Folder Include="Data\Commands\Responses\Timelines\" />
+    <Folder Include="Data\Queries\" />
+  </ItemGroup>
+
 </Project>
